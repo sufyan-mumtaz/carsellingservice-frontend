@@ -7,7 +7,6 @@ export default function Home() {
   useEffect(() => {
     let data = localStorage.getItem("data");
     data = JSON.parse(data);
-    console.log(token);
     if (data?.token) {
       router.push("/vehicle");
     } else {
